@@ -34,7 +34,7 @@ def fetch_data():
     print(f"Data for {datetime.now().strftime('%Y-%m-%d')} saved to {filename}")
 
 # Schedule the task to run daily at 9:30 AM IST
-schedule.every().day.at("15:30").do(fetch_data)
+schedule.every().day.at("15:50").do(fetch_data)
 
 while True:
     schedule.run_pending()
